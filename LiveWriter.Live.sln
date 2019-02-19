@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSPaste.WindowsLiveWriter", "VSPaste.WindowsLiveWriter\VSPaste.WindowsLiveWriter.csproj", "{7825FE0B-C646-45D2-9C67-7FBAFD5EB90F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSPaste.OpenLiveWriter", "VSPaste.OpenLiveWriter\VSPaste.OpenLiveWriter.csproj", "{6D032F1A-21D0-47A6-B6BD-860168DCEBF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F6D51286-6F27-476B-BAFD-2BBF730AE08F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7825FE0B-C646-45D2-9C67-7FBAFD5EB90F}.Debug|x86.ActiveCfg = Debug|x86
+		{7825FE0B-C646-45D2-9C67-7FBAFD5EB90F}.Debug|x86.Build.0 = Debug|x86
+		{7825FE0B-C646-45D2-9C67-7FBAFD5EB90F}.Release|x86.ActiveCfg = Release|x86
+		{7825FE0B-C646-45D2-9C67-7FBAFD5EB90F}.Release|x86.Build.0 = Release|x86
+		{6D032F1A-21D0-47A6-B6BD-860168DCEBF9}.Debug|x86.ActiveCfg = Debug|x86
+		{6D032F1A-21D0-47A6-B6BD-860168DCEBF9}.Debug|x86.Build.0 = Debug|x86
+		{6D032F1A-21D0-47A6-B6BD-860168DCEBF9}.Release|x86.ActiveCfg = Release|x86
+		{6D032F1A-21D0-47A6-B6BD-860168DCEBF9}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3FD3EEA3-BFE3-4CB6-89E9-3D6EFDE8CB8D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>local</ProjectType>
+    <ProjectVersion>7.10.377</ProjectVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6D032F1A-21D0-47A6-B6BD-860168DCEBF9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <AssemblyName>VSPaste.OpenLiveWriter</AssemblyName>
+    <OutputType>Library</OutputType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;OPEN_LIVE_WRITER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;OPEN_LIVE_WRITER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Reference Include="OpenLiveWriter.Api, Version=0.6.2.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>ReferenceAssemblies\OpenLiveWriter.Api.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReferenceAssemblies\OpenLiveWriter.Api.dll" />
+    <None Include="ReferenceAssemblies\OpenLiveWriter.BrowserControl.dll" />
+    <None Include="ReferenceAssemblies\OpenLiveWriter.Controls.dll" />
+    <None Include="ReferenceAssemblies\OpenLiveWriter.CoreServices.dll" />
+    <None Include="ReferenceAssemblies\OpenLiveWriter.HtmlParser.dll" />
+    <None Include="ReferenceAssemblies\OpenLiveWriter.Interop.dll" />
+    <None Include="ReferenceAssemblies\OpenLiveWriter.Interop.Mshtml.dll" />
+    <None Include="ReferenceAssemblies\OpenLiveWriter.Interop.SHDocVw.dll" />
+    <None Include="ReferenceAssemblies\OpenLiveWriter.Localization.dll" />
+    <None Include="ReferenceAssemblies\OpenLiveWriter.Mshtml.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\VSPaste.WindowsLiveWriter\ColorProcessor.cs">
+      <Link>ColorProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\VSPaste.WindowsLiveWriter\HTMLRootProcessor.cs">
+      <Link>HTMLRootProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\VSPaste.WindowsLiveWriter\ProcessorStack.cs">
+      <Link>ProcessorStack.cs</Link>
+    </Compile>
+    <Compile Include="..\VSPaste.WindowsLiveWriter\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\VSPaste.WindowsLiveWriter\RTF\IProcessor.cs">
+      <Link>RTF\IProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\VSPaste.WindowsLiveWriter\RTF\Parser.cs">
+      <Link>RTF\Parser.cs</Link>
+    </Compile>
+    <Compile Include="..\VSPaste.WindowsLiveWriter\RTF\Scanner.cs">
+      <Link>RTF\Scanner.cs</Link>
+    </Compile>
+    <Compile Include="..\VSPaste.WindowsLiveWriter\VoidProcessor.cs">
+      <Link>VoidProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\VSPaste.WindowsLiveWriter\VSPaste\VSPaste.cs">
+      <Link>VSPaste\VSPaste.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="..\VSPaste.WindowsLiveWriter\VSPaste.icon.png">
+      <Link>VSPaste.icon.png</Link>
+    </Content>
+  </ItemGroup>
+</Project>
